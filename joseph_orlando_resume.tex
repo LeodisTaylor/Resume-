@@ -1,0 +1,191 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadings}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://josephorlando.dev/}{\Large Joseph Orlando}} & \href{mailto:contact@josephorlando.dev}{contact@josephorlando.dev}\\
+  \href{https://josephorlando.dev/}{josephorlando.dev} & \href{tel:+13862378613}{+1-386-237-8613} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Western Governors University}{Orlando, FL}
+      {Bachelor of Science in Software Development}{Degree to be Conferred March. 2020}
+    \resumeSubheading
+      {Daytona State College}{Daytona Beach, Florida}
+      {Associate of Arts;  GPA: 4.00}{Degree Conferred Dec. 2018}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+      \textbf{Languages}{: Java, C, Python, SQL, Javascript, HTML/CSS}
+   \hfill
+   }
+   \item{
+	 \textbf{Technologies}{: Git, GCP, Agile, Android Studio, IntelliJ, DialogFlow, Node.js} 
+	 \hfill
+   }
+ \resumeSubHeadingListEnd
+
+ %-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Garage Availability Checker App}{}
+{Android Application}{March 2020}
+\resumeItemListStart
+  \resumeItem{}
+  {Android application that uses Java, Android Studio, and DialogFlow to allow students to request parking spot availability partially hands-free as well as generate line-charts that show the average availability per week}
+  \resumeItem{}
+  {Backend webscrapper and garage status API were built using Javascript storing data into an InfluxDB database deployed to Heroku}
+  \resumeItem{}
+  {Implements Google Sign-in functionality to allow for unique user sessions}
+\resumeItemListEnd
+
+\resumeSubheading
+{Fetch (HatterHacks 2019 IoT Category Winner)}{HatterHacks 2019}
+{Energy Efficient IoT Location Service}{April 2019}
+\resumeItemListStart
+  \resumeItem{}
+	{Uses Wi-Fi as a short-range radio for coarse location finding}
+	\resumeItem{}
+	{Utilizes Node.js to transmit and receive location data of Particle.io hardware, deployed via Google Cloud Platform}
+  \resumeItemListEnd
+
+\resumeSubheading
+{Code Talker}{HackABull 2019}
+{Light-based Radio-Silent Communications}{March 2019}
+\resumeItemListStart
+  \resumeItem{}
+	{Android application that encodes messages as a series of binary flashes from the flashlight of one device to the camera of
+	another device allowing you to transmit messages without the use of traditional mobile/Wi-Fi
+	networks}
+	\resumeItem{}
+	{Detects binary flashes through the use of OpenCV’s computer vision library}
+	\resumeItem{}
+	{Uses Java/Android Studio to build the phone application and JUnit for testing}
+  \resumeItemListEnd
+
+	\resumeSubheadings
+	{Desktop Scheduling Application}{}
+	{}{}
+	\resumeItemListStart
+	  \resumeItem{}
+		{Desktop application that allows multiple users to add, edit, and delete customers as well as schedule appointments specific to their current user session}
+		\resumeItem{}
+		{Application built with JavaFX utilizing Scene Builder for UI design}
+		\resumeItem{}
+		{User, customer, and appointment information stored in a MySQL database}
+	  \resumeItemListEnd
+
+	  \resumeSubheadings
+	  {Desktop Inventory System}{}
+	  {}{}
+	  \resumeItemListStart
+		\resumeItem{}
+		  {Desktop application that allows users to add, modify, and delete products which are made up of user created parts}
+		  \resumeItem{}
+		  {Application built with JavaFX utilizing Scene Builder for UI design}
+		\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Qkids English}{Orlando, FL}
+      {Online ESL Teacher}{Aug. 2017 - Dec. 2018}
+      \resumeItemListStart
+        \resumeItem{}
+          {Taught English to Mandarin-speaking students ages 4-12 by utilizing an online platform that
+		  provided students with an understanding of basic grammar, listening, and speaking skills}
+		  \resumeItem{}
+          {Interacted with parents to help them understand the material being taught}
+		  \resumeItem{}
+          {Solved basic computing issues that arose during the lesson while using the online platform}
+		\resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
